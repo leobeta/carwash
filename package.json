@@ -1,0 +1,17 @@
+{
+  "name": "carwash",
+  "version": "1.0.0",
+  "description": "Proyecto de Coderhouse HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/styles.css",
+    "watch-css": "nodemon carwash -e scss,js -x \"npm run build-css\""
+  },
+  "author": "Leonardo Betancourt",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
