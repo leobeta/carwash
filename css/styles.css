@@ -4,19 +4,12 @@ body,
   height: 100%;
   margin: 0;
   font-family: "Ubuntu Condensed", sans-serif !important;
-  background-color: #ececec; }
+  background-color: #ffffff; }
 
 .container-fluid {
   padding-left: 0 !important;
   padding-right: 0 !important;
   min-height: 100vh; }
-
-footer {
-  background-image: linear-gradient(to bottom, #545454, #ececec);
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  line-height: 60px; }
 
 .inline-radio {
   display: inline-flex; }
@@ -90,6 +83,14 @@ footer {
   animation-duration: 3s;
   animation-delay: 0s; }
 
+@keyframes overEffect {
+  0% {
+    opacity: 0.5; }
+  50% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
+
 .navbar-brand {
   width: 100px;
   font-size: 24px; }
@@ -97,3 +98,85 @@ footer {
     height: 50px;
     float: left;
     margin-right: 7px; }
+
+.slide-info {
+  background-color: gray;
+  opacity: 0.8; }
+  .slide-info h1 {
+    color: #ffffff;
+    font-weight: 800; }
+  .slide-info p {
+    color: #ffffff;
+    font-weight: 500; }
+
+.carousel .carousel-item {
+  height: 500px; }
+
+.carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 500px; }
+
+.img__wrap {
+  position: relative;
+  height: 100%;
+  width: auto; }
+
+.img__description_layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(236, 236, 236, 0.6);
+  color: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s, visibility 0.2s; }
+
+.img__wrap:hover .img__description_layer {
+  visibility: visible;
+  opacity: 1; }
+
+.img__description {
+  transition: 0.2s;
+  transform: translateY(1em); }
+
+.img__wrap:hover .img__description {
+  transform: translateY(0); }
+
+.footer-basic {
+  padding: 20px 0;
+  background-color: #545454;
+  color: #ffffff; }
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 10px; }
+
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ececec;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75; }
+
+.footer-basic .social > a:hover {
+  opacity: 0.9; }
+
+.footer-basic .copyright {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 0; }
