@@ -178,5 +178,11 @@ body,
   margin-top: 5px;
   text-align: center;
   font-size: 1rem;
-  color: #aaa;
+  color: #ececec;
   margin-bottom: 0; }
+
+.aboutImgLeft {
+  float: left; }
+
+.aboutImgRight {
+  float: right; }

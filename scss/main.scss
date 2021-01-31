@@ -220,6 +220,14 @@ body,
   margin-top: 5px;
   text-align: center;
   font-size: 1rem;
-  color: #aaa;
+  color: $lightGray;
   margin-bottom: 0;
+}
+
+.aboutImgLeft {
+  float: left;
+}
+
+.aboutImgRight {
+  float: right;
 }
