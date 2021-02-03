@@ -56,49 +56,60 @@
   </header>
   <div class="container">
     <h1>Contact</h1>
-    <table class="contact">
-      <tr>
-        <th colspan="2">APPOINTMENT SECTION</th>
-      </tr>
-      <tr>
-        <td>Name</td>
-        <td><input type="text"></td>
-      </tr>
-      <tr>
-        <td>Telephone</td>
-        <td><input type="number"></td>
-      </tr>
-      <tr>
-        <td>Service</td>
-        <td>
-          <select>
-            <option value="1">General Wash</option>
-            <option value="2">General Wash + Motor</option>
-            <option value="3">General Wash + Grafito</option>
-            <option value="4">General Wash + Encerado</option>
-            <option value="5">General Wash + Polichado</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td>To pick up?</td>
-        <td>
-          <div class="inline-radio">
-            <input type="radio" id="yes" name="pickup" value="yes">
-            <label for="yes">Yes</label><br>
-            <input type="radio" id="no" name="pickup" value="no">
-            <label for="no">No</label>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>Address</td>
-        <td><input type="text"></td>
-      </tr>
-      <tr>
-        <td colspan="2"><input type="button" value="Enviar"></td>
-      </tr>
-    </table>
+    <p>Contactate con nosotros y permitenos el gusto de atendernos, con este formulario podras solicitar tu servicio o
+      dar una recomendacion, queja o recurso.</p>
+    <form>
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="telefono">Telefono</label>
+        <input type="text" id="telefono" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Servicio</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>Lavado general</option>
+          <option>Lavado detallado</option>
+          <option>Accesorios y Lujos</option>
+          <option>Domicilio Seguro</option>
+          <option>Sala de espera VIP</option>
+          <option>Polarizados titanio y nanocerámico</option>
+          <option>Autodetailing</option>
+          <option>Protección Anticorrosiva</option>
+          <option>Desinfección Con Amonio Cuaternario</option>
+          <option>Otro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="">Recogemos tu vehiculo?</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="recogemosOption" id="inlineRadio1" value="S">
+          <label class="form-check-label" for="inlineRadio1">Si</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="recogemosOption" id="inlineRadio2" value="N">
+          <label class="form-check-label" for="inlineRadio2">No</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="direccion">Direccion</label>
+        <input type="text" id="direccion" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="comentarios">Comentarios</label>
+        <textarea class="form-control" id="comentarios" rows="5"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </form>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <img src="../images/contact.png" alt="contactenos">
+      </div>
+    </div>
   </div>
   <div class="footer-basic">
     <footer>
