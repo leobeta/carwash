@@ -186,3 +186,6 @@ body,
 
 .aboutImgRight {
   float: right; }
+
+.aboutParagraph {
+  line-height: 1.8rem; }
